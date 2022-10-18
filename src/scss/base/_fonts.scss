@@ -1,0 +1,11 @@
+$font-family-prefix: $folder-name;
+
+$list-fonts: (
+	'#{$font-family-prefix}_Re': '#{$font-family-prefix}_Regular',
+	'#{$font-family-prefix}_lt': '#{$font-family-prefix}_Light',
+	'#{$font-family-prefix}Sans_Re': '#{$font-family-prefix}Sans_Regular',
+	'#{$font-family-prefix}Sans_lt': '#{$font-family-prefix}Sans_Light',
+);
+
+
+@include font-list($list-fonts, $folder-name);

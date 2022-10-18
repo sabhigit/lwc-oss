@@ -1,0 +1,9 @@
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin circle($value) {
+    @include size($value);
+    border-radius: math.div($value, 2);
+}

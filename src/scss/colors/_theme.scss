@@ -1,0 +1,6 @@
+$theme-list: (
+	'theme-darker': (var(--bg-color-darker), #fff),
+	'theme-dark': (var(--bg-color-dark), green)
+);
+
+@include createTheme($theme-list);

@@ -1,0 +1,15 @@
+@mixin font-face($font-family, $folder, $file, $weight: 'normal') {
+	$filepath: $fonts-folder + '/' + $folder + '/' + $file;
+
+	@font-face {
+		font-family: quote($font-family);
+		src: url($filepath + '.woff2') format('woff2'),
+			url($filepath + '.woff') format('woff');
+	}
+}
+
+@mixin font-list ($list, $folder) {
+	@each $item in $list {
+		@include font-face(#{nth($item, 2)}, $folder-name, #{nth($item, 1)}, 'normal');
+	}
+}

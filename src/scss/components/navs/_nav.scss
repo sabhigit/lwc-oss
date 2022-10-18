@@ -1,0 +1,28 @@
+.nav {
+    list-style: none;
+}
+.nav-horizontal {
+    display: flex;
+}
+
+.nav-item {
+    a,
+    a:link:not(.slds-button){
+        color: inherit;
+        display: block;
+        padding: var(--spacing-small);
+    }
+
+    .nav-has_sep:not(:last-child) & {
+        position: relative;
+        &::after {
+            @include size(2px, 50%);
+            content: '';
+            background-color: inherit;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+    }    
+}

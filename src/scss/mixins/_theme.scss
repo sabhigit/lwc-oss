@@ -1,0 +1,13 @@
+@mixin createTheme($list) {
+    @each $item in $list {
+        .#{nth($item, 1)} {
+            $values: nth($item,2);
+            background-color: #{nth($values, 1)};
+            color: #{nth($values, 2)};
+
+            a {
+                color: #{nth($values, 2)}
+            }
+        }
+    }
+}
