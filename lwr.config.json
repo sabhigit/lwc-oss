@@ -17,8 +17,14 @@
             "urlPath": "/assets"
         },
         {
+            "alias": "fontsDir",
             "dir": "$rootDir/src/assets/fonts",
             "urlPath": "/fonts"
+        },
+        {
+            "alias": "imgDir",
+            "dir": "$rootDir/src/assets/images",
+            "urlPath": "/images"
         },
         {
             "file": "$rootDir/src/assets/utilitySprite.svg",

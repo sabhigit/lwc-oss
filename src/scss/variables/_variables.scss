@@ -1,5 +1,21 @@
-//******Color
+//Absolute values
+$grid-values: (
+	n:  0,
+	xs:  5px,
+	sm:  10px,
+	md:  15px,
+	lg:  20px,
+	xl:  30px
+) !default;
 
+$xs:							map-get($grid-values, xs);
+$sm:							map-get($grid-values, sm);
+$md:		 					map-get($grid-values, md);
+$lg:							map-get($grid-values, lg);
+$xl: 							map-get($grid-values, xl);
+
+
+//******Color
 $black:							#000;
 $white:							#fff;
 $gray:							#7b7b7b !default;
@@ -16,10 +32,18 @@ $brand-primary-lighter: 		#b4e1ef !default;
 
 $brand-error: 					#dc3545 !default;
 
+$brand-bg-dark:                 var(--bg-color-dark);
+
 //Grid
 $font-size-base:                1rem;
 $line-height-base:              1.25 !default;//1.25 !default;
+$grid-gutter:   			  	$md !default;
+$grid-padding:					$grid-gutter;  
+$grid-header-height:            75px;
+
 // Grid
 $body-bg:                     	#ddd !default;
 $text-color:                  	#232323 !default;
 $text-light:					#828282 !default;
+
+//padding;

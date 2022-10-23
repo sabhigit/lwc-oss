@@ -1,6 +1,12 @@
 <template lwc:render-mode='light'>
-    <div class="yad-cont">
-        <div class="slds-text-color_success">Testing</div>
-        <div class="text-red">This is header component</div>
+    <div class="yad-wrapper">
+        <div class="yad-main-nav">
+            <img src="/images/logo.svg" alt="Sabhi">
+            <div class="text-red">Sukhjinderjeet Singh</div>
+            <div clas="slds-grid slds-grid_vertical-align-center">
+                <lightning-icon icon-name="utility:user" alternative-text="Log in" variant="inverse" size="x-small" ></lightning-icon>
+                <span class="slds-p-left_medium slds-text-link_reset" onclick={login}>Login</span>
+            </div>
+        </div>
     </div>
 </template>

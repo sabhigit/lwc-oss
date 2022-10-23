@@ -1,11 +1,15 @@
 <template>
-    <div class="yad-grid">
-        <ui-header></ui-header>
-        <div class="yad-cont">
+    <div class="yad-main">
+        <header class="yad-header">
+            <ui-header></ui-header>
+        </header>
+        <div class="yad-wrapper">
             This is the main body
-            <lightning-button label="Login" onclick={login}></lightning-button>
+            <!-- <lightning-button label="Login" onclick={login}></lightning-button> -->
             <lightning-button label="Test" onclick={getContacts}></lightning-button>
         </div>
-        <ui-footer></ui-footer>
+        <footer class="yad-footer">
+            <ui-footer></ui-footer>
+        </footer>
     </div>
 </template>

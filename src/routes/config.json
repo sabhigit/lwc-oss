@@ -1,0 +1,18 @@
+{
+    "routes": [
+        {
+            "id": "example",
+            "path": "/test",
+            "rootComponent": "ui/app"
+        },
+        {
+            "id": "home",
+            "path": "/",
+            "rootComponent": "ui/app",
+            "layoutTemplate": "$layoutsDir/index.html",
+            "bootstrap": {
+                "syntheticShadow": true
+            }
+        }
+    ]
+}

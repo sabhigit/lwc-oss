@@ -1,1 +1,146 @@
-:root{--bg-color-dark:#1a2029;--bg-color-darker:#181818;--spacing-small:.5rem}@font-face{font-family:Alec_Regular;src:url(../fonts/Alec/Alec_Re.woff2) format("woff2"),url(../fonts/Alec/Alec_Re.woff) format("woff")}@font-face{font-family:Alec_Light;src:url(../fonts/Alec/Alec_lt.woff2) format("woff2"),url(../fonts/Alec/Alec_lt.woff) format("woff")}@font-face{font-family:AlecSans_Regular;src:url(../fonts/Alec/AlecSans_Re.woff2) format("woff2"),url(../fonts/Alec/AlecSans_Re.woff) format("woff")}@font-face{font-family:AlecSans_Light;src:url(../fonts/Alec/AlecSans_lt.woff2) format("woff2"),url(../fonts/Alec/AlecSans_lt.woff) format("woff")}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:#ddd;color:#232323;font-family:Alec_Regular,sans-serif;font-size:1rem;line-height:1.25}.theme-darker{background-color:var(--bg-color-darker);color:#fff}.theme-darker a{color:#fff}.theme-dark{background-color:var(--bg-color-dark);color:green}.theme-dark a{color:green}.bg-dark{background-color:var(--bg-color-dark)}.bg-darker{background-color:var(--bg-color-darker)}.test-dark{background-color:#333}.nav{list-style:none}.nav-horizontal{display:-webkit-box;display:-ms-flexbox;display:flex}.nav-item a,.nav-item a:link:not(.slds-button){color:inherit;display:block;padding:var(--spacing-small)}.nav-has_sep:not(:last-child) .nav-item{position:relative}.nav-has_sep:not(:last-child) .nav-item:after{background-color:inherit;content:"";height:50%;position:absolute;right:0;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:2px}.att-icon{height:30px;width:30px}
+:root {
+  --bg-color-dark: #1a2029;
+  --bg-color-darker: #181818;
+  --spacing-small: .5rem;
+}
+
+@font-face {
+  font-family: "Alec_Regular";
+  src: url("../fonts/Alec/Alec_Re.woff2") format("woff2"), url("../fonts/Alec/Alec_Re.woff") format("woff");
+}
+@font-face {
+  font-family: "Alec_Light";
+  src: url("../fonts/Alec/Alec_lt.woff2") format("woff2"), url("../fonts/Alec/Alec_lt.woff") format("woff");
+}
+@font-face {
+  font-family: "AlecSans_Regular";
+  src: url("../fonts/Alec/AlecSans_Re.woff2") format("woff2"), url("../fonts/Alec/AlecSans_Re.woff") format("woff");
+}
+@font-face {
+  font-family: "AlecSans_Light";
+  src: url("../fonts/Alec/AlecSans_lt.woff2") format("woff2"), url("../fonts/Alec/AlecSans_lt.woff") format("woff");
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Alec_Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #232323;
+  background: #ddd;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yad-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 75px auto 100px;
+  grid-template-rows: 75px auto 100px;
+  min-height: 100vh;
+}
+
+.yad-wrapper {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.yad-header,
+.yad-footer {
+  background-color: rgba(11, 29, 48, 0.86);
+  color: #fff;
+}
+
+.yad-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.yad-main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 75px;
+}
+
+.theme-darker {
+  background-color: var(--bg-color-darker);
+  color: #fff;
+}
+.theme-darker a {
+  color: #fff;
+}
+
+.theme-dark {
+  background-color: var(--bg-color-dark);
+  color: green;
+}
+.theme-dark a {
+  color: green;
+}
+
+.bg-dark {
+  background-color: var(--bg-color-dark);
+}
+
+.bg-darker {
+  background-color: var(--bg-color-darker);
+}
+
+.test-dark {
+  background-color: #333333;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-item a,
+.nav-item a:link:not(.slds-button) {
+  color: inherit;
+  display: block;
+  padding: var(--spacing-small);
+}
+.nav-has_sep:not(:last-child) .nav-item {
+  position: relative;
+}
+.nav-has_sep:not(:last-child) .nav-item::after {
+  width: 2px;
+  height: 50%;
+  content: "";
+  background-color: inherit;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.att-icon {
+  width: 30px;
+  height: 30px;
+}
